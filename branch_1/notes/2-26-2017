@@ -1,0 +1,18 @@
+what do I want to do today code wise? 
+
+get mouse location, keyboard input. 
+
+get character to move around based on keyboard input 
+
+get character to stop moving when there is no keyboard input. 
+
+
+if we do it globally then we can update the code from the classes
+themselves, and not do it externally. 
+
+I think that I have no fucking idea what the future is going to bring
+in terms of the design of this code (this...despite me having been
+at this point about a million times in the past). So I'm just gonna
+have each object run an "refresh_and_draw()" method that will be
+responsible for all of the updates, and then drawing the image onto
+the screen. 

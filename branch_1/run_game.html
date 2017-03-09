@@ -1,0 +1,69 @@
+
+
+<!DOCTYPE HTML>
+<html>
+  <body>
+    <!-- <canvas id="mainCanvas" width="1000" height="500"></canvas> -->
+    <canvas id="mainCanvas" tabindex="1" width="500" height="200"></canvas>
+
+	<img id= "PeopleArt1" src ="person_stuff/Graphics/people.png" style="display: none;"/>
+
+	
+	
+
+	<script src = "overarching_code/global.js"> </script>
+
+	<script src = "write_stuff/write.js"> </script>
+
+	<script src = "person_stuff/Graphics/SingleImage.js"> </script>
+
+	<script src = "person_stuff/Graphics/Row.js"> </script>
+
+	
+ 	<script src = "person_stuff/Graphics/SingleGraphicSet.js"> </script>
+<!--
+	<script src = "person_stuff/Graphics/MultipleMovingGraphics.js"> </script>
+
+	
+
+	<!-- <script src = "overarching_code/main.js"> </script> -->
+
+	<!-- <script src = "overarching_code/test_area.js"> </script> -->
+
+	<script src = "overarching_code/keyboard_input.js"> </script>
+	<script src = "overarching_code/construct_game.js"> </script> 
+	<script src = "overarching_code/main.js"> </script> 
+	<script>
+
+    // document.getElementById('mainCanvas').addEventListener('keypress', handleKeyPress);
+    // function handleKeyPress(e) {
+
+    // 	write.add("keydown is: " + e.key);
+    // };
+	
+
+    // document.getElementById('mainCanvas').addEventListener('keydown', handleKeyPress);
+    // function handleKeyPress(e) {
+
+    // 	write.add("1e.key is: " + e.key);
+    // 	write.add("2e.charCode is: " + e.charCode);
+    // 	write.add("3e.which is: " + e.which);
+    // };
+		
+
+		window.onload = function () {
+
+			var ONE_FRAME_TIME = 230;
+
+			construct_game();
+			
+			setInterval( mainloop, ONE_FRAME_TIME );
+
+			//mainloop();
+
+		};
+	
+    </script>
+  </body>
+</html>
+

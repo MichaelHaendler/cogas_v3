@@ -1,0 +1,77 @@
+
+
+<!DOCTYPE HTML>
+<html>
+  <body>
+   <canvas id="mainCanvas" width="400" height="200"></canvas>
+
+   <!-- <img id= "PeopleArt1" src ="person_stuff/people.png" style="display: none;"/> -->
+
+   <!-- the style bit is because, without it, the image was just showing up
+   regardless of whether or not I was drawing it onto the canvas
+   (since this is html though, I guess that makes sense) -->
+   <img id= "PeopleArt1" src ="http://imgur.com/RMkU0tL.png" style="display: none;"/> 
+	<script>
+
+		//
+		var ctx = mainCanvas.getContext('2d');
+
+		// var PersonImage = new Image();
+		// //PersonImage.src = "http://imgur.com/RMkU0tL.png";
+		// PersonImage.src = PeopleArt1.src;
+
+		var PersonCanvas = document.createElement("CANVAS");
+		PersonCanvas.id = "cih";//person image holder (not used)
+		// PersonCanvas.width = 70;
+		// PersonCanvas.height = 70;
+		var PersonContext = PersonCanvas.getContext('2d');
+
+		var sx = 0;
+		var sy = 0;
+		var sw = 31;
+		var sh = 50;
+		var dx = 0;
+		var dy = 0;
+		var dw = 50;
+		var dh = 50;
+
+		function construct_game(){
+
+			PersonContext.drawImage(PeopleArt1,sx,sy,sw,sh,dx,dy,sw,sh);
+			
+		}
+
+		// PeopleArt1.onload = function() {
+		// 	PersonContext.drawImage(PeopleArt1,sx,sy,sw,sh,dx,dy,sw,sh);
+		// 	//ctx.drawImage(PersonCanvas,10,100);
+		// };
+
+		//PersonContext.drawImage(PersonImage,sx,sy,sw,sh,dx,dy,sw,sh);
+		
+		function mainloop(){
+
+		//just to know where the borders are. 
+			ctx.fillStyle = "pink";
+			ctx.fillRect(0, 0, mainCanvas.width, mainCanvas.height);
+
+			//ctx.drawImage(PersonCanvas,10,100);
+			//oldway();
+
+			ctx.drawImage(PersonCanvas,10,100); 
+
+			//window.onload = function () { ctx.drawImage(PersonCanvas,10,100); }
+		}
+
+		window.onload = function () {
+		construct_game();
+		mainloop();
+		};
+	
+    </script>
+  </body>
+</html>
+
+
+<!-- <blockquote class="imgur-embed-pub" lang="en" data-id="a/HpJYK"><a href="//imgur.com/HpJYK"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script> -->
+
+<!-- http://i.imgur.com/RMkU0tL.png -->

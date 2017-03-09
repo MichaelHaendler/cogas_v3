@@ -1,0 +1,31 @@
+2-2-2017
+
+need to implement debugging tool 
+
+2-4-2017
+
+make a method called something like kingGraphic that will make an MMG of the king graphic 
+
+try that static value thing 
+
+make person class and use that to move the static graphic around 
+
+move onto making a pseudo 3-D world 
+
+for (var key in a){
+    console.log(a.key);
+}
+
+I need person class 
+
+then I need to take in input. 
+
+=======================================
+
+make a small canvas 
+
+draw our image to the canvas. 
+
+save the small canvas to a variable 
+
+draw said small canvas onto the bigger canvas. 

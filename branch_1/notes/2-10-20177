@@ -1,0 +1,16 @@
+if a person is clicked on, set gx and gy to the person's dx and dy. 
+
+MMI is just graphics. 
+
+person should hold the pseudo 3d stuff coming later. and be responsible 
+for the z dimension. 
+
+-------------------
+
+get character to move 
+
+get character to show the proper "standing still" graphic 
+
+get square and name to show up above character. 
+
+be able to select different characters.
